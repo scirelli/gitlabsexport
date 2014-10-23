@@ -20,7 +20,8 @@ for d in "$repos"*/*.git ; do
 	folderPath=$(check "$output$folder")
 	echo "Running: git clone $d/ $folderPath"
 	git clone "$d/" "$folderPath"
-	tar -zcvf ~/repos/${folder}.tar.gz $folderPath
+	tar -zcvf ~/repos/${folder}_$(date +%y-%m-%d).tar.gz $folderPath
 	#break;
 done
 
+tar -zcvf ~/repos/bareRepos_$(date +%y-%m-%d).tar.gz $repos

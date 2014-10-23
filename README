@@ -1,0 +1,5 @@
+Read Me
+=======
+
+This script is meant to be run from the gitlabs server.
+Open the script and change the $repos varieables to point to where the repositories are stored. Usually it's under /home/git/repositories/
